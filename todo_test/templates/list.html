@@ -4,6 +4,12 @@
 </head>
 <body>
 <h1>{{ page_title }}</h1>
-<p>{{ page_body }}</p>
+<p>
+{% for item in items %}
+	<p>
+		{{item.title}}
+	</p>
+{% endfor %}
+</p>
 </body>
 </html>

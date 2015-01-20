@@ -15,7 +15,7 @@ def list_view(request):
 
 		})
 	items = Item.objects.all()
-	return render ('list_view.html',{'items'.items})
+	return render (request,'list.html',{'items':items})
 
 def todo_add(request):
 	if request.method == "POST":
