@@ -36,7 +36,7 @@ class Item(models.Model):
 	title= models.CharField(max_length= 250)
 	description= models.CharField(max_length= 500, default= 'No description')
 	due_date= models.DateTimeField()
-	priority= models.IntegerField(choices= PRIORITY_CHOICES, default= 2)
+	priority= models.IntegerField(choices= PRIORITY_CHOICES, default= 3)
 	status= models.IntegerField(choices= TASK_STATUS)
 	#todo_list= models.ForeignKey(List)
 
